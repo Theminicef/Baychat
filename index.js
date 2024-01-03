@@ -12,7 +12,7 @@ app.post("/authenticate", async (req, res) => {
 
   try {
     const r = await axios.put(
-      "https://api.chatengine.io/users/",
+      "https://api.chategine.io/users/",
       { username: username, secret: username, first_name: username },
       { headers: { "Private-Key": "70bc98a7-b136-4ec6-85fc-aa94b4a08ab3" } }
     );
